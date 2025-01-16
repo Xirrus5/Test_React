@@ -1,0 +1,184 @@
+/* Aseguramos que el body cubra toda la ventana */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #ffff;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  height: 100%; 
+  box-sizing: border-box; 
+}
+
+/* Contenedor del formulario */
+.container {
+  background-color: white; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 90%; 
+  max-width: 400px; 
+  text-align: center;
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  overflow: hidden;
+}
+
+/* Títulos */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px; 
+}
+h1{
+  color: #000;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Estilo específico para cuando el texto se ingresa */
+input::placeholder {
+  color: #999; 
+}
+
+input, select {
+  color: black; 
+}
+
+/* Botón */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+/* Mensajes de error */
+p {
+  color: red; 
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; 
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px; 
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%; 
+    padding: 15px; 
+  }
+
+  h2 {
+    font-size: 16px; 
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  label {
+    font-size: 12px; 
+  }
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; 
+  color: black; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+  appearance: none; 
+}
+
+select option {
+  color: black; 
+  background-color: white; 
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 14px; 
+  font-weight: bold;
+  margin: 10px; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 10px; 
+}
+
+.root{
+  background: url('../assets/bg.png') no-repeat  ;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 50px;
+  border-color: #000;
+
+}
